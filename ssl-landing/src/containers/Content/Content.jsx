@@ -10,10 +10,9 @@ import Footer from "./Footer";
 import solar from "../../resources/img/solar.svg";
 import snow_light from "../../resources/img/snow_light.svg";
 
-
 const Content = () => {
   return (
-    <div className={styles["content"]} >
+    <div className={styles["content"]}>
       <div className={styles["name"]}>
         <img className={styles["name_solar"]} src={solar} />
         <img src={snow_light} />
@@ -24,7 +23,7 @@ const Content = () => {
         <br />
         Ваш контент, наши цифры.
       </h3>
-      <Ticker/>
+      <Ticker />
       <div className={styles["item-text"]}>
         <h1 className={styles["item-text-h1"]}>
           Разработка веб-сайтов, <br /> десктопных приложений и игр
@@ -38,12 +37,10 @@ const Content = () => {
         </div>
       </div>
       <WebProducts />
-      <Ticker/>
-      <DesktopProducts/>
-      <Ticker/>
-      <GameDevProducts/>
-      <Ticker/>
-      <Footer/>
+      <Ticker />
+      <DesktopProducts />
+      <Ticker />
+      <Footer />
     </div>
   );
 };

@@ -2,7 +2,8 @@ import React from "react";
 import styles from "./DesktopProducts.module.css";
 
 import desktop from "../../../resources/img/desktop.svg";
-import site from "../../../resources/img/site.svg";
+import desktop_5dim from "../../../resources/img/desktop_5dim.svg";
+import desktop_netman from "../../../resources/img/desktop_netman.svg";
 
 const DesktopProducts = () => {
   return (
@@ -15,24 +16,17 @@ const DesktopProducts = () => {
       <div className={styles["content-p"]}>
         <div className={styles["child"]}>
           <div className={styles["child-text"]}>
+            <p></p>
             <h2>Netman</h2>
-            <p>Система создания квестов и новелл</p>
           </div>
-          <img className={styles["child-img"]} src={site} />
+          <img className={styles["child-img"]} src={desktop_netman}/>
         </div>
         <div className={styles["child"]}>
           <div className={styles["child-text"]}>
-            <h2>Netman</h2>
-            <p>Система создания квестов и новелл</p>
+            <p></p>
+            <h2>5 Измерение</h2>
           </div>
-          <img src={site} />
-        </div>
-        <div className={styles["child"]}>
-          <div className={styles["child-text"]}>
-            <h2>Netman</h2>
-            <p>Система создания квестов и новелл</p>
-          </div>
-          <img src={site} />
+          <img className={styles["child-img"]} src={desktop_5dim}/>
         </div>
       </div>
     </div>
