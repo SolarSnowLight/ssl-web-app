@@ -1,18 +1,18 @@
 .container{
-  margin:  -204px  -8px!important;
-  padding: 16px;
-  width: 100%;
+  width: 100%; 
   position: fixed;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  z-index: 1;
+  justify-content: space-between;
+  z-index: 1000;
 }
 
 .right-btn{
   display: inline-flex;
-  grid-gap: 24px;
+  grid-gap: 32px;
   color: var(--white);
+  font-size: 20px;
+  margin-right: 32px;
 }
 
 .lg-btn{
@@ -33,4 +33,8 @@
   background-color: inherit;
   outline: none;
   border: none;
+}
+
+.logo{
+  width: 6vh;
 }

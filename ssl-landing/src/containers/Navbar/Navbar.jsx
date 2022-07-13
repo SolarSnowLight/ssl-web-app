@@ -10,17 +10,12 @@ import Menu from "./Menu";
 const Navbar = () => {
   return (
     <div className={styles["container"]}>
-      <img src={logo} />
+      <img  className={styles["logo"]} src={logo} />
       <div className={styles["right-btn"]}>
-        <div className={styles["language"]}>
           <button className={styles["lg-btn"]}>EN</button>
           <button className={styles["lg-btn"]}>Ru</button>
           <button className={styles["lg-btn"]}>中国人</button>
         </div>
-        <button className={styles["menu-btn"]}>
-          
-        </button>
-      </div>
     </div>
   );
 };

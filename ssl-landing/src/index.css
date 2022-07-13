@@ -1,9 +1,9 @@
 :root {
-  --white: #FAFAFA;
+  --white: #FFFFFF;
   --purple: #767EEA;
   --blue: #4DA4DA;
   --green: #23CACA;
-  --black: #060040;
+  --black: #000A26;
   --gray-light: #BDBCC9;
   --gray-dark: #6A6971;
   --liner: gradient(180deg, #23CACA 0%, #767EEA 100%);
@@ -26,48 +26,99 @@
 
 @font-face {
   font-family: "PS-l";
-  src: url("./resources/font/ProximaSoft-Light.ttf") format("truetype");
+  src: url("./resources/font/ProximaSoft-Thin.ttf") format("truetype");
 }
 
-body {
-  overflow-x: hidden;
-  color: var(--white);
-  /*
-  background-image: url("./resources/img/back.svg");*/
-  font-family: "PS" !important;
-  background-color: #000000;
-  min-width: 320px;
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 100px;
 }
 
+::-webkit-scrollbar:hover {
+  background-color: rgba(0, 0, 0, 0.09);
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 100px;
+  background-clip: padding-box;
+  border: 2px solid rgba(0, 0, 0, 0);
+  min-height: 10px;
+}
+
+::-webkit-scrollbar-thumb:vertical:active {
+  background: rgba(0, 0, 0, 0.61);
+  border-radius: 100px;
+}
 h1 {
-  font-size: 88px;
-  font-family: "PS";
+  font-size: 64px ;
+  line-height: 1;
+  font-weight: 100;
+  margin-bottom: 1rem;
+  hyphens: auto;
 }
-
+p {
+  bottom: 10vw;
+  right: 10vw;
+  width: 292px;
+  line-height: 1.5;
+}
 h2{
   font-size: var(--fs-h1);
-  font-family: "PS";
+  font-family: "PS-l";
   line-height: 0.1;
+  font-weight: 300;
+}
+
+a{
+  color: var(--white);
+  text-decoration-color: transparent;
+
 }
 
 @media (max-width: 320px) {
-  .content {
-    width: 100%;
-    margin-left: 16px;
-    margin-right: 16px;
-
-  }
 }
 
-@media (min-width: 768px) {
-  .content {
-    width: 100%;
-    margin-left: 64px;
-    margin-right:  64px;
-
-  }
-}
 
 @media (min-width: 1400px) {
   
+}
+@media (min-width: 768px) {
+  h1{
+    font-size: 8vw;
+  }
+  span {
+    display: block;
+  }
+  h2 {
+    font-size: 2rem;
+    max-width: 300px;
+  }
+}
+
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: "Proxima Soft";
+  color: var(--text-color);
+  background: var(--bg-color);
+  transition: 0.3s ease-out;
+  overflow-x: hidden;
+  max-width: 100%;
+  width: 100%;
+  overscroll-behavior: none;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.65;
+  overflow-x: hidden;
+  opacity: 1;
+  background-color: #000A26;
+  font-family: PS;
+  color: var(--white);
 }

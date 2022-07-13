@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Content.module.css";
+import { Animator, ScrollContainer, ScrollPage, batch, Fade, FadeIn, FadeOut, Move, MoveIn, MoveOut, Sticky, StickyIn, StickyOut, Zoom, ZoomIn, ZoomOut } from "react-scroll-motion";
 
 import WebProducts from "./WebProducts";
 import Ticker from "./Ticker";
@@ -7,41 +8,31 @@ import DesktopProducts from "./DesktopProducts";
 import GameDevProducts from "./GameDevProducts";
 import Footer from "./Footer";
 
-import solar from "../../resources/img/solar.svg";
-import snow_light from "../../resources/img/snow_light.svg";
 
 const Content = () => {
   return (
-    <div className={styles["content"]}>
-      <div className={styles["name"]}>
-        <img className={styles["name_solar"]} src={solar} />
-        <img src={snow_light} />
-      </div>
-      <h3 className={styles["sub-text"]}>
-        {" "}
-        Создание вашего цифрового контена.
-        <br />
-        Ваш контент, наши цифры.
-      </h3>
-      <Ticker />
-      <div className={styles["item-text"]}>
-        <h1 className={styles["item-text-h1"]}>
-          Разработка веб-сайтов, <br /> десктопных приложений и игр
+    <>
+     <div className={styles["content"]}>
+      <div >
+        <h1 data-scroll data-scroll-speed="1">
+          <span className={styles["s"]}>
+            Solar
+            <br />
+          </span>
+          <span className={styles["sl"]}>Snow Light</span>
         </h1>
-        <div className={styles["item-text-sub"]}>
-          Мы молодая быстрорастущая компания.
-          <br />
-          Наша специальность - все и еще чуть-чуть. <br />
-          Среди готовых продуктов представлены как и наши <br />
-          стартапы так и сделанные на заказ.
-        </div>
+        <p data-scroll data-scroll-speed="2" data-scroll-delay="0.2">
+          Создание вашего цифрового контена. Ваш контент, наши цифры.
+        </p>
       </div>
-      <WebProducts />
-      <Ticker />
-      <DesktopProducts />
-      <Ticker />
-      <Footer />
+      <div>
+       
+      </div>
+   
     </div>
+
+    </>
+   
   );
 };
 
